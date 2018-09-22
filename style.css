@@ -1,0 +1,327 @@
+* {
+	margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* スクリーン1 */
+.screen1_top {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom:50px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.screen1_question1, .screen1_question2, .screen1_question3 {
+    margin: 0 auto;
+    background: #fff;
+    margin-bottom: 50px; 
+    height: 80px;
+    width: 70%;
+    display: block;
+    border: solid 1px #000;
+}
+
+.screen1_button {
+}
+
+.screen1_button_text {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.screen1_button_text p {
+    text-align: center;
+}
+
+.screen1_button_area {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin-bottom: 50px; 
+    height: 50px;
+    width: 70%;
+}
+
+.screen1_button_area p {
+    text-align: center;
+    color: #fff;
+}
+
+/* スクリーン2 */
+.screen2_top {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom:20px;
+}
+
+.start_text{
+    text-align: center;
+}
+
+.battle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.enemy_card {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.enemy_card img{
+
+}
+
+.my_card {
+    margin: 0 auto;
+    padding-bottom: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.my_card img{
+
+}
+
+
+.screen2_select {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: #fff;
+    padding-top: 50px;
+}
+
+.screen2_select_gu, .screen2_select_choki, .screen2_select_pa {
+    width: 220px;
+    height: 300px;
+     -webkit-transition: all 0.3s ease;
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+.screen2_select_gu.use {
+    top: -312px;
+    left: 843px;
+    transform: scale(1.4);
+}
+
+.screen2_select_choki.use {
+    top: -312px;
+    left: 358px;
+    transform: scale(1.4);
+}
+
+.screen2_select_pa.use {
+    top: -312px;
+    left: -116px;
+    transform: scale(1.4);
+}
+
+.screen2_select_gu_image img {
+    width: 100%;
+}
+
+.screen2_select_gu_text p{
+    text-align: center;
+}
+
+.screen2_select_choki_image img {
+    width: 100%;
+}
+
+.screen2_select_choki_text p{
+    text-align: center;
+}
+
+.screen2_select_pa_image img {
+    width: 100%;
+}
+
+.screen2_select_pa_text p{
+    text-align: center;
+}
+
+
+/* スクリーン4 */
+.screen4_top {
+    display: flex;
+    justify-content: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.screen4_question {
+
+}
+
+.screen4_question1, .screen4_question2, .screen4_question3 {
+    margin: 0 auto;
+    background: #fff;
+    margin-bottom: 50px; 
+    height: 80px;
+    width: 70%;
+    border: solid 1px #000;
+}
+
+.screen4_button {
+}
+
+.screen4_button_text {
+    margin: 0 auto;
+    width: 70%;
+}
+
+.screen4_button_text p {
+    text-align: center;
+}
+
+.screen4_button_area {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+    margin-bottom: 50px; 
+    height: 50px;
+    width: 70%;
+}
+
+.screen4_button_area p {
+    text-align: center;
+    color: #fff;
+}
+
+/* スマホ */
+@media (max-width: 670px){
+
+    .screen1_question1, .screen1_question2, .screen1_question3 {
+        font-size: 20px;
+    }
+
+    .screen2_top {
+        display: flex;
+        justify-content: center;
+        padding-top: 30px;
+        padding-bottom:20px;
+    }
+    
+    .start_text{
+        text-align: center;
+    }
+    
+    .battle {
+        display: block;
+        justify-content: center;
+        align-items: center;
+    }
+    
+    .enemy_card {
+        margin: 0 auto;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .enemy_card img{
+        width: 50%;
+        height: 50%;
+    }
+    
+    .my_card {
+        margin: 0 auto;
+        padding-bottom: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .my_card img{
+        width: 50%;
+        height: 50%;
+    }
+    
+    
+    .screen2_select {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background: #fff;
+        padding-top: 0px;
+    }
+    
+    .screen2_select_gu, .screen2_select_choki, .screen2_select_pa {
+        width: 25%;
+        height: 25%;
+         -webkit-transition: all 0.3s ease;
+        position: relative;
+        top: 0px;
+        left: 0px;
+    }
+    
+    .screen2_select_gu.use {
+        top: -158px;
+        left: 125px;
+        transform: scale(2);
+    }
+    
+    .screen2_select_choki.use {
+        top: -158px;
+        left: 0px;
+        transform: scale(2);
+    }
+    
+    .screen2_select_pa.use {
+        top: -158px;
+        left: -125px;
+        transform: scale(2);
+    }
+    
+    .screen2_select_gu_image img {
+        width: 100%;
+    }
+    
+    .screen2_select_gu_text p{
+        text-align: center;
+    }
+    
+    .screen2_select_choki_image img {
+        width: 100%;
+    }
+    
+    .screen2_select_choki_text p{
+        text-align: center;
+    }
+    
+    .screen2_select_pa_image img {
+        width: 100%;
+    }
+    
+    .screen2_select_pa_text p{
+        text-align: center;
+    }
+
+}

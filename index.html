@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="screen1" id="first">
+        <div class="header">
+            <p>質問ジャンケン3本勝負</p>
+        </div>
+        <div class="screen1_top">
+            <p>質問したいことを3つ書きましょう</p>
+        </div>
+        <div class="screen1_question">
+            <div class="screen1_question_area">
+                <textarea class="screen1_question1" name="shitsumon1" rows="4" cols="40"></textarea>
+                <textarea class="screen1_question2" name="shitsumon2" rows="4" cols="40"></textarea>
+                <textarea class="screen1_question3" name="shitsumon3" rows="4" cols="40"></textarea>
+            </div>
+            <div class="screen1_button">
+                <div class="screen1_button_text">
+                    <p>質問を書いたら</p>
+                </div>
+                <div class="screen1_button_area">
+                    <p>じゃんけんスタート</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="screen2" id="second">
+        <div class="header">
+            <p>質問ジャンケン3本勝負</p>
+        </div>
+        <div class="screen2_top">
+            <p id="battle_count">
+                <span class="count_win">0</span>勝
+                <span class="count_loss">0</span>敗</p>
+        </div>
+        <div class="start_text">
+            <p id="result">ジャンケン...</p>
+        </div>
+        <div class="battle">
+            <div class="enemy_card">
+                <img src="img/red.png" alt="red">
+            </div>
+            <div class="my_card">
+                <img src="img/blue.png" alt="blue">
+            </div>
+        </div>
+        <div class="screen2_select">
+            <div class="screen2_select_gu">
+                <div class="screen2_select_gu_image" data-type="gu">
+                    <img src="img/gu.png" alt="gu">
+                </div>
+            </div>
+            <div class="screen2_select_choki">
+                <div class="screen2_select_choki_image" data-type="choki">
+                    <img src="img/choki.png" alt="choki">
+                </div>
+            </div>
+            <div class="screen2_select_pa">
+                <div class="screen2_select_pa_image" data-type="pa">
+                    <img src="img/pa.png" alt="pa">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="screen4" id="fourth">
+        <div class="header">
+            <p>質問ジャンケン3本勝負</p>
+        </div>
+        <div class="screen4_top">
+            <p>負けた回数質問に答えましょう</p>
+        </div>
+        <div class="screen4_question">
+            <div class="screen4_question1">
+                <p id="screen4_question1_text"></p>
+            </div>
+            <div class="screen4_question2">
+                <p id="screen4_question2_text"></p>
+            </div>
+            <div class="screen4_question3">
+                <p id="screen4_question3_text"></p>
+            </div>
+        </div>
+        <div class="screen4_button">
+            <div class="screen4_button_text">
+                <p>質問に答えたら</p>
+            </div>
+            <div class="screen4_button_area">
+                <p>再チャレンジ！</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="main.js" charset="UTF-8"></script>
+</body>
+
+</html>
